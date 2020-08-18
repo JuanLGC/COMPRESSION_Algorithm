@@ -4,12 +4,13 @@ import re
 
 symbols = {
 #   key             :   symbols[key]
-    "implementation":   "🤯",
-    "practicality"  :   '🤩',
-    "better"        :   '😅',
-    "than"          :   '😘',
-    "Although"      :   "🥺",
-    "explain"       :   "😎",
+    "implementation":   "🌭",
+    "practicality"  :   '🍔',
+    "better"        :   '🥨',
+    "than"          :   '🥙',
+    "Although"      :   "🍖",
+    "explain"       :   "🥠",
+    
 }
 
 def compress(content):
@@ -20,6 +21,7 @@ def compress(content):
     compressed_content = compressed_content.replace("than", symbols["than"])
     compressed_content = compressed_content.replace("Although", symbols["Although"])
     compressed_content = compressed_content.replace("explain", symbols["explain"])
+    
     print(compressed_content)    
 
     return compressed_content
